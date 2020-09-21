@@ -2,12 +2,7 @@
 
 body {
     font-family: 'Open Sans', sans-serif;
-    background: url(./image/BG.jpg);
-    background-attachment: fixed;
-    background-size: cover;
-    background-position: center;
-    background-color: rgb(57, 62, 70);
-    background-blend-mode: overlay;
+    background: linear-gradient(to right bottom, #051937, #004d7a, #008793, #00bf72, #a8eb12);
 }
 
 #title {
@@ -15,18 +10,19 @@ body {
     font-weight: 700;
     text-align: center;
     color: #fff;
-    padding-top: 30px;
+    padding: 80px 10px 0 10px;
+    text-shadow: 2px;
 }
 #description {
     font-size: 1.1rem;
     font-weight: 400;
     text-align: center;
     color: #fff;
-    padding-bottom: 20px;
+    padding: 0 10px 50px 10px;
 }
 
 #survey-form {
-    background-color: rgba(34, 49, 63, 0.8);
+    background-color: rgba(34, 49, 63, 1);
     width: 50%;
     margin: auto;
     padding: 20px;
@@ -36,97 +32,93 @@ body {
 #name {
     display: block;
     width: 95%;
-    height: 25px;
+    height: 40px;
     margin: auto;
-    padding: 10px;
     border: none;
     border-radius: 4px;
 }
 #name::placeholder {
     font-size: 0.9rem;
     padding: 5px;
-    font-weight: 400;
+    font-weight: 500;
 }
 #name-label {
     display: inline-block;
     font-size: 1.1rem;
-    margin: 0 0 10px 10px;
+    margin: 0 0 10px 15px;
 }
 
 #email {
     display: block;
     width: 95%;
-    height: 25px;
+    height: 40px;
     margin: auto;
-    padding: 10px;
     border: none;
     border-radius: 4px;
 }
 #email::placeholder {
     font-size: 0.9rem;
     padding: 5px;
-    font-weight: 400;
+    font-weight: 500;
 }
 #email-label {
     display: inline-block;
     font-size: 1.1rem;
-    margin: 0 0 10px 10px;
+    margin: 0 0 10px 15px;
 }
 
 #number {
     display: block;
     width: 95%;
-    height: 25px;
+    height: 40px;
     margin: auto;
-    padding: 10px;
     border: none;
     border-radius: 4px;
 }
 #number::placeholder {
     font-size: 0.9rem;
     padding: 5px;
-    font-weight: 400;
+    font-weight: 500;
 }
 #number-label {
     display: inline-block;
     font-size: 1.1rem;
-    margin: 0 0 10px 10px;
+    margin: 0 0 10px 15px;
 }
 
 #dropdown {
     display: block;
-    width: 97%;
+    width: 95%;
     height: 45px;
     margin: auto;
-    padding: 10px;
     border: none;
     border-radius: 4px;
 }
 #dropdown-label {
     display: inline-block;
     font-size: 1.1rem;
-    margin: 0 0 10px 10px;
+    margin: 0 0 10px 15px;
 }
 #dropdown option {
-    font-size: 0.9rem;
+    font-size: 1rem;
     padding: 10px;
-    font-weight: 400;
+    font-weight: 300;
 }
 
 #beginner, #intermidiate, #advanced {
     width: 13px;
     height: 13px;
-    margin-left: 10px;
+    margin-left: 15px;
     margin-bottom: 15px;
 }
 
 .para1 {
     font-size: 1.1rem;
-    margin: 25px 0 10px 10px;
+    margin: 25px 0 10px 15px;
 }
 .para2 {
     font-size: 1.1rem;
-    margin: 15px 0 10px 10px;
+    margin: 15px 0 10px 15px;
 }
 
 #msg {
@@ -145,14 +137,14 @@ body {
 #msg-label {
     display: inline-block;
     font-size: 1.1rem;
-    margin: 20px 0 10px 10px;
+    margin: 20px 0 10px 15px;
 }
 
 
 #HTMLCSS, #JavaScript, #TypeScript, #jQuery, #React, #Vue, #Angular, #Node, #PHP, #Laravel, #Python, #Django {
     width: 13px;
     height: 13px;
-    margin-left: 10px;
+    margin-left: 15px;
     margin-bottom: 15px;
 }
 
@@ -170,7 +162,7 @@ body {
     transition: ease 1s;
 }
 #submit:hover {
-    background-color: #00d1ff;
+    background-color: #3fc1c9;
 }
 
 .footer {
@@ -179,7 +171,7 @@ body {
     padding: 10px;
 }
 
-@media screen and (max-width: 688px) {
+@media screen and (max-width: 879px) {
     #survey-form {
         width: 70%;
     }
